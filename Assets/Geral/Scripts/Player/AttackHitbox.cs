@@ -6,6 +6,7 @@ public class AttackHitbox : MonoBehaviour
     [Header("Configurações de Knockback")]
     [SerializeField] private float knockbackForce = 15f;
     [SerializeField] private float knockbackUpwardForce = 5f;
+    [SerializeField] private int damageAmount = 1;
 
     private List<Collider2D> targetsHitThisSwing;
     private Transform playerTransform;
@@ -31,7 +32,7 @@ public class AttackHitbox : MonoBehaviour
 
         if (enemyHealth != null)
         {
-            enemyHealth.TakeDamage(1);
+            enemyHealth.TakeDamage(damageAmount);
             
             targetsHitThisSwing.Add(other);
 

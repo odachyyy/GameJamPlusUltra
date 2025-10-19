@@ -10,15 +10,24 @@ public class GameManager : MonoBehaviour
     public int Score { get; private set; }
     public int PlayerHealth { get; private set; }
 
+    public PowerUpColetavel.AttackType CurrentPlayerAttack { get; private set; }
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false); 
+
+            Destroy(gameObject); 
         }
         else
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+          
+            CurrentPlayerAttack = PowerUpColetavel.AttackType.None;
+            
         }
     }
 
@@ -39,4 +48,10 @@ public class GameManager : MonoBehaviour
         PlayerHealth = newHealth;
         uiManager.UpdateHealth(PlayerHealth);
     }
+
+    public void SetPlayerAttack(PowerUpColetavel.AttackType newType)
+    {
+        CurrentPlayerAttack = newType;
+    }
 }
+
