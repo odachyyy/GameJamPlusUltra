@@ -618,7 +618,7 @@ Transform:
   m_GameObject: {fileID: 4966542151068662462}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18766882, y: 1.2743933, z: -9.960261}
+  m_LocalPosition: {x: -0.18766882, y: 3.2743933, z: -9.960261}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -945,7 +945,6 @@ GameObject:
   - component: {fileID: 4745723769003025584}
   - component: {fileID: 7169290442049339680}
   - component: {fileID: 656617672613846012}
-  - component: {fileID: 5390767916615421264}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -962,7 +961,7 @@ Transform:
   m_GameObject: {fileID: 7396900003262818817}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18766882, y: 1.2743933, z: -9.960261}
+  m_LocalPosition: {x: -0.18766882, y: 3.2743933, z: -9.960261}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1035,7 +1034,7 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
+  TargetOffset: {x: 0, y: 2, z: 0}
   Damping: {x: 0.5, y: 0.5, z: 1}
   Lookahead:
     Enabled: 1
@@ -1174,6 +1173,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5659461481040642238}
     m_Modifications:
+    - target: {fileID: 4119453333822781427, guid: 7c5a2bfee9862c442b82532b00115b86, type: 3}
+      propertyPath: TargetOffset.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4897470179666421543, guid: 7c5a2bfee9862c442b82532b00115b86, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1214,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6933140642188230576, guid: 7c5a2bfee9862c442b82532b00115b86, type: 3}
+      propertyPath: Lens.OrthographicSize
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9185645657742001312, guid: 7c5a2bfee9862c442b82532b00115b86, type: 3}
       propertyPath: m_Name
       value: _Cameras
@@ -1221,20 +1228,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8621579080546923258, guid: 7c5a2bfee9862c442b82532b00115b86, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5390767916615421264}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c5a2bfee9862c442b82532b00115b86, type: 3}
---- !u!114 &5390767916615421264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7396900003262818817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f42238e6d687a4398525ef86af4e55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
