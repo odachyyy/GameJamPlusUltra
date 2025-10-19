@@ -1,0 +1,15 @@
+# Pasta da Unity que NUNCA deve ser enviada
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+
+# Arquivos de IDE e SO
+*.sln
+*.csproj
+*.user
+*.suo
+.DS_Store
